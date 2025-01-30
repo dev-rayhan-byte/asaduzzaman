@@ -101,356 +101,31 @@
     <!-- Navbar Start 
     
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <style>
     
-#bupc-top-bar {
-    position: fixed;
-    top: 0; /* Ensure it sticks to the top */
-    left: 0;
-    width: 100%;
-    height: 70px;
-    background-color: #d3d3d3;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.55);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    box-sizing: border-box;
-    z-index: 1000000;
-    font-family: 'Roboto', sans-serif;
-    transform: translateY(0); /* Always visible */
-    transition: transform 0.3s ease-in-out; /* For smoothness if you decide to hide/show */
-}
-
-
-        /* Logo styling */
-        .bupc-logo img {
-            height: 60px;
-
-        }
-
-        /* Menu button styling */
-        .bupc-menu-button {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 30%;
-            background-color: #a3a3a3;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .bupc-menu-button svg {
-            width: 28px;
-            height: 24px;
-            fill: #373737;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .bupc-menu-button.open svg {
-            transform: rotate(45deg);
-        }
-
-        .bupc-menu-button.open svg line:nth-child(2) {
-            opacity: 0;
-        }
-
-    
-
-        /* Menu overlay styling */
-        #bupc-nav {
-            height: 0;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: rgba(0, 0, 0, 0.95);
-            overflow: hidden;
-            transition: height 0.7s ease-in-out;
-            z-index: 99999;
-        }
-
-        #bupc-nav .bupc-overlay-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80%;
-            max-height: 80%;
-            text-align: center;
-            overflow-y: auto;
-        }
-
-        #bupc-nav .bupc-overlay-content a {
-            padding: 8px;
-            text-decoration: none;
-            font-size: 28px;
-            font-family: serif;
-            color: #fafafa;
-            display: block;
-            transition: color 0.3s, background-color 0.3s;
-            background-color: rgba(255, 255, 255, 0.44);
-            border-radius: 15px;
-            margin: 5px 0;
-            border: 1px solid #cacaca;
-        }
-
-        #bupc-nav .bupc-overlay-content a:hover {
-            color: #f1f1f1;
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        /* Ensure smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
-
-
-
-    
-    <div id="bupc-top-bar" class="navbar fixed-top shadow-sm navbar-expand-lg  navbar-light py-3 py-lg-0 px-lg-5">
-        
-        <div class="bupc-menu-button" id="bupc-menu-button">
-            <svg viewBox="0 0 100 80" width="40" height="40">
-                <line x1="10" y1="20" x2="90" y2="20" stroke="white" stroke-width="10"></line>
-                <line x1="10" y1="40" x2="90" y2="40" stroke="white" stroke-width="10"></line>
-                <line x1="10" y1="60" x2="90" y2="60" stroke="white" stroke-width="10"></line>
-            </svg>
-        </div>
+<!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
        
-         <a href="https://dev-rayhan-byte.github.io/asaduzzaman/index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">ASAD </span>BIN MOSHARAF</h1>
-        </a>
-        
-        
-    </div>
-
-  
-    <div id="bupc-nav">
-        <div class="bupc-overlay-content">
-            
-               <div class="navbar-nav m-auto py-0">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/about" class="nav-item nav-link">About</a>
-                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/education-experience" class="nav-item nav-link">Education & Experience</a>
-                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/research-interest" class="nav-item nav-link">Research Interest</a>
-                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/publications" class="nav-item nav-link">Publications</a>
-                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/awards-and-honors" class="nav-item nav-link">Awards and Honors</a>
-                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/participation" class="nav-item nav-link">Participation</a>
-                <a href="" class="nav-item nav-link">Presentations</a>
-                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/membership" class="nav-item nav-link">Membership</a>
-                <a href="" class="nav-item nav-link">Computer Skills</a>
-                <a href="" class="nav-item nav-link">Countries Visited</a>
-                <a href="" class="nav-item nav-link">Latest</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
+<a href="https://sites.google.com/bu.ac.bd/asaduzzaman/about" class="nav-item nav-link">About</a>
+<a href="https://sites.google.com/bu.ac.bd/asaduzzaman/education-experience" class="nav-item nav-link">Qualification</a>
+<a href="https://sites.google.com/bu.ac.bd/asaduzzaman/membership" class="nav-item nav-link">Membership</a>
+<a href="https://sites.google.com/bu.ac.bd/asaduzzaman/participation" class="nav-item nav-link">Participation</a>
+<a href="https://sites.google.com/bu.ac.bd/asaduzzaman/publications" class="nav-item nav-link">publications</a>
+<a href="https://sites.google.com/bu.ac.bd/asaduzzaman/awards-and-honors" class="nav-item nav-link">Review</a>
+<a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
+           
         </div>
-    </div>
-
-
-
-    <script>
-        window.addEventListener('DOMContentLoaded', function() {
-            var menuButton = document.getElementById('bupc-menu-button');
-            var overlay = document.getElementById('bupc-nav');
-
-            menuButton.addEventListener('click', function() {
-                if (overlay.style.height === '100%') {
-                    overlay.style.height = '0%';
-                    menuButton.classList.remove('open');
-                } else {
-                    overlay.style.height = '100%';
-                    menuButton.classList.add('open');
-                }
-            });
-        });
-
-              document.addEventListener('DOMContentLoaded', function () {
-    // Ensure the top bar remains fixed and doesn't move
-    var bupcTopBar = document.getElementById('bupc-top-bar');
-    bupcTopBar.style.top = '0'; // Keep it permanently fixed at the top
-});
-
-
-
-
-    </script>
-
-    <!-- Navbar End -->
-    
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <style>
-        /* Top bar styling */
-        #bupc-top-bar {
-            position: fixed;
-            top: -70px; /* Initially hidden */
-            left: 0;
-            width: 100%;
-            height: 70px;
-            background-color: #e7e4e4;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.55);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-            box-sizing: border-box;
-            z-index: 1000000;
-            font-family: 'Roboto', sans-serif;
-            transition: top 0.5s ease-in-out;
-        }
-
-        /* Logo styling */
-        .bupc-logo img {
-            height: 60px;
-        }
-
-        /* Menu button styling */
-        .bupc-menu-button {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 25%;
-            background-color: #c6c6c6;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .bupc-menu-button svg {
-            width: 24px;
-            height: 24px;
-            fill: #373737;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .bupc-menu-button.open svg {
-            transform: rotate(45deg);
-        }
-
-        /* Menu overlay styling */
-        #bupc-nav {
-            height: 0;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: rgba(0, 0, 0, 0.95);
-            overflow: hidden;
-            transition: height 0.7s ease-in-out;
-            z-index: 99999;
-        }
-
-        #bupc-nav .bupc-overlay-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80%;
-            max-height: 80%;
-            text-align: center;
-            overflow-y: auto;
-        }
-
-        #bupc-nav .bupc-overlay-content a {
-            padding: 8px;
-            text-decoration: none;
-            font-size: 28px;
-            font-family: serif;
-            color: #fafafa;
-            display: block;
-            transition: color 0.3s, background-color 0.3s;
-            background-color: rgba(255, 255, 255, 0.44);
-            border-radius: 15px;
-            margin: 5px 0;
-            border: 1px solid #cacaca;
-        }
-
-        #bupc-nav .bupc-overlay-content a:hover {
-            color: #f1f1f1;
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        /* Ensure smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
-</head>
-<body>
-    <!-- Top Bar -->
-    <div id="bupc-top-bar">
-        <div class="bupc-menu-button" id="bupc-menu-button">
-            
-            <svg viewBox="0 0 100 80" width="40" height="40">
-    <line x1="10" y1="15" x2="90" y2="15" stroke="black" stroke-width="10" stroke-linecap="round"></line>
-    <line x1="10" y1="40" x2="90" y2="40" stroke="black" stroke-width="10" stroke-linecap="round"></line>
-    <line x1="10" y1="65" x2="90" y2="65" stroke="black" stroke-width="10" stroke-linecap="round"></line>
-</svg>
-
-        </div>
-        <a href="https://dev-rayhan-byte.github.io/asaduzzaman/index.html" class="navbar-brand ml-lg-3">
+         <a href="index.html" class="navbar-brand ml-lg-3">
             <h1 class="m-0 display-5"><span class="text-primary">ASAD </span>BIN MOSHARAF</h1>
         </a>
-    </div>
-
-    <!-- Menu Overlay -->
-    <div id="bupc-nav">
-        <div class="bupc-overlay-content">
-            <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/about" class="nav-item nav-link">About</a>
-                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/education-experience" class="nav-item nav-link">Education & Experience</a>
-                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/research-interest" class="nav-item nav-link">Research Interest</a>
-                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/publications" class="nav-item nav-link">Publications</a>
-                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/awards-and-honors" class="nav-item nav-link">Awards and Honors</a>
-                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/participation" class="nav-item nav-link">Participation</a>
-                <a href="" class="nav-item nav-link">Presentations</a>
-                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/membership" class="nav-item nav-link">Membership</a>
-                <a href="" class="nav-item nav-link">Computer Skills</a>
-                <a href="" class="nav-item nav-link">Countries Visited</a>
-                <a href="" class="nav-item nav-link">Latest</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var topBar = document.getElementById("bupc-top-bar");
-            var menuButton = document.getElementById("bupc-menu-button");
-            var overlay = document.getElementById("bupc-nav");
-
-            window.addEventListener("scroll", function () {
-                if (window.scrollY > 1000) {
-                    topBar.style.top = "0";
-                } else {
-                    topBar.style.top = "-70px";
-                }
-            });
-
-            menuButton.addEventListener("click", function () {
-                if (overlay.style.height === "100%") {
-                    overlay.style.height = "0%";
-                    menuButton.classList.remove("open");
-                } else {
-                    overlay.style.height = "100%";
-                    menuButton.classList.add("open");
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+    </nav>
+    <!-- Navbar End -->
 
 
 
@@ -638,7 +313,7 @@
 <div class="section">
     
      <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Publications</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Papers</h1>
                 <h1 class="position-absolute text-uppercase text-primary"> Publications </h1>
             </div>
     
@@ -674,7 +349,7 @@
 
 <div class="section">
     <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Participation</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">marked</h1>
                 <h1 class="position-absolute text-uppercase text-primary"> Participation </h1>
             </div>
   <h2>Participation</h2>
@@ -689,9 +364,9 @@
 
 <div class="section">
     <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Presentations</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;"></h1>
                 <h1 class="position-absolute text-uppercase text-primary"> Presentations </h1>
-            </div>
+            </div><br><br>
   <h2>Presentations</h2>
   <ul>
     <li>International Conference (Poster): Md. F. Hossain, Md. Asaduzzaman, F. Fujita, and Md. Khorshed Alam, "Excited-states Calculations for C60/Pentacene Interface," The 5th Innovative Forum of Advanced Engineering and Education (IFAEE-5), November 1, 2018, Tokyo, Japan.</li>

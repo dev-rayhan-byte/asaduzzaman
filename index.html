@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>	Md. Asaduzzaman</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://dev-rayhan-byte.github.io/asaduzzaman/asad%20sir.ico" type="image/x-icon">
+    <link href="https://dev-rayhan-byte.github.io/asaduzzaman/asad%20sir.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="https://dev-rayhan-byte.github.io/asaduzzaman/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://dev-rayhan-byte.github.io/asaduzzaman/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="https://dev-rayhan-byte.github.io/asaduzzaman/style.css" rel="stylesheet">
+    
+    
+    <style>
+    
+      
+    
+    
+
+/* Container for sections */
+.section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+.section h2 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Paragraphs and Lists in sections */
+.section p, .section ul {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* List styling */
+.section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* 'See More' button */
+.see-more-btn {
+  display: block; /* Makes the button a block-level element */
+  
+  color: #267669;
+  padding: 10px 15px;
+  margin-top: 15px;
+  margin-left: auto;  /* Automatically adjusts the left margin */
+  margin-right: auto; /* Automatically adjusts the right margin */
+  text-align: center;
+  border-radius: 49px;
+    border: 2px solid #267669;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 150px; /* Optional: define a fixed width for better control */
+}
+
+.see-more-btn:hover {
+  background-color: #267669;
+    color: antiquewhite;
+}
+
+
+
+    </style>
+    
+   
+    
+    
+    
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start 
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <style>
+    
+#bupc-top-bar {
+    position: fixed;
+    top: 0; /* Ensure it sticks to the top */
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #d3d3d3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.55);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1000000;
+    font-family: 'Roboto', sans-serif;
+    transform: translateY(0); /* Always visible */
+    transition: transform 0.3s ease-in-out; /* For smoothness if you decide to hide/show */
+}
+
+
+        /* Logo styling */
+        .bupc-logo img {
+            height: 60px;
+
+        }
+
+        /* Menu button styling */
+        .bupc-menu-button {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 30%;
+            background-color: #a3a3a3;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .bupc-menu-button svg {
+            width: 28px;
+            height: 24px;
+            fill: #373737;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .bupc-menu-button.open svg {
+            transform: rotate(45deg);
+        }
+
+        .bupc-menu-button.open svg line:nth-child(2) {
+            opacity: 0;
+        }
+
+    
+
+        /* Menu overlay styling */
+        #bupc-nav {
+            height: 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.95);
+            overflow: hidden;
+            transition: height 0.7s ease-in-out;
+            z-index: 99999;
+        }
+
+        #bupc-nav .bupc-overlay-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-height: 80%;
+            text-align: center;
+            overflow-y: auto;
+        }
+
+        #bupc-nav .bupc-overlay-content a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 28px;
+            font-family: serif;
+            color: #fafafa;
+            display: block;
+            transition: color 0.3s, background-color 0.3s;
+            background-color: rgba(255, 255, 255, 0.44);
+            border-radius: 15px;
+            margin: 5px 0;
+            border: 1px solid #cacaca;
+        }
+
+        #bupc-nav .bupc-overlay-content a:hover {
+            color: #f1f1f1;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Ensure smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+
+
+    
+    <div id="bupc-top-bar" class="navbar fixed-top shadow-sm navbar-expand-lg  navbar-light py-3 py-lg-0 px-lg-5">
+        
+        <div class="bupc-menu-button" id="bupc-menu-button">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+                <line x1="10" y1="20" x2="90" y2="20" stroke="white" stroke-width="10"></line>
+                <line x1="10" y1="40" x2="90" y2="40" stroke="white" stroke-width="10"></line>
+                <line x1="10" y1="60" x2="90" y2="60" stroke="white" stroke-width="10"></line>
+            </svg>
+        </div>
+       
+         <a href="https://dev-rayhan-byte.github.io/asaduzzaman/index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">ASAD </span>BIN MOSHARAF</h1>
+        </a>
+        
+        
+    </div>
+
+  
+    <div id="bupc-nav">
+        <div class="bupc-overlay-content">
+            
+               <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/about" class="nav-item nav-link">About</a>
+                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/education-experience" class="nav-item nav-link">Education & Experience</a>
+                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/research-interest" class="nav-item nav-link">Research Interest</a>
+                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/publications" class="nav-item nav-link">Publications</a>
+                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/awards-and-honors" class="nav-item nav-link">Awards and Honors</a>
+                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/participation" class="nav-item nav-link">Participation</a>
+                <a href="" class="nav-item nav-link">Presentations</a>
+                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/membership" class="nav-item nav-link">Membership</a>
+                <a href="" class="nav-item nav-link">Computer Skills</a>
+                <a href="" class="nav-item nav-link">Countries Visited</a>
+                <a href="" class="nav-item nav-link">Latest</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var menuButton = document.getElementById('bupc-menu-button');
+            var overlay = document.getElementById('bupc-nav');
+
+            menuButton.addEventListener('click', function() {
+                if (overlay.style.height === '100%') {
+                    overlay.style.height = '0%';
+                    menuButton.classList.remove('open');
+                } else {
+                    overlay.style.height = '100%';
+                    menuButton.classList.add('open');
+                }
+            });
+        });
+
+              document.addEventListener('DOMContentLoaded', function () {
+    // Ensure the top bar remains fixed and doesn't move
+    var bupcTopBar = document.getElementById('bupc-top-bar');
+    bupcTopBar.style.top = '0'; // Keep it permanently fixed at the top
+});
+
+
+
+
+    </script>
+
+    <!-- Navbar End -->
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <style>
+        /* Top bar styling */
+        #bupc-top-bar {
+            position: fixed;
+            top: -70px; /* Initially hidden */
+            left: 0;
+            width: 100%;
+            height: 70px;
+            background-color: #e7e4e4;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.55);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+            z-index: 1000000;
+            font-family: 'Roboto', sans-serif;
+            transition: top 0.5s ease-in-out;
+        }
+
+        /* Logo styling */
+        .bupc-logo img {
+            height: 60px;
+        }
+
+        /* Menu button styling */
+        .bupc-menu-button {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 25%;
+            background-color: #c6c6c6;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .bupc-menu-button svg {
+            width: 24px;
+            height: 24px;
+            fill: #373737;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .bupc-menu-button.open svg {
+            transform: rotate(45deg);
+        }
+
+        /* Menu overlay styling */
+        #bupc-nav {
+            height: 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.95);
+            overflow: hidden;
+            transition: height 0.7s ease-in-out;
+            z-index: 99999;
+        }
+
+        #bupc-nav .bupc-overlay-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-height: 80%;
+            text-align: center;
+            overflow-y: auto;
+        }
+
+        #bupc-nav .bupc-overlay-content a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 28px;
+            font-family: serif;
+            color: #fafafa;
+            display: block;
+            transition: color 0.3s, background-color 0.3s;
+            background-color: rgba(255, 255, 255, 0.44);
+            border-radius: 15px;
+            margin: 5px 0;
+            border: 1px solid #cacaca;
+        }
+
+        #bupc-nav .bupc-overlay-content a:hover {
+            color: #f1f1f1;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Ensure smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div id="bupc-top-bar">
+        <div class="bupc-menu-button" id="bupc-menu-button">
+            
+            <svg viewBox="0 0 100 80" width="40" height="40">
+    <line x1="10" y1="15" x2="90" y2="15" stroke="black" stroke-width="10" stroke-linecap="round"></line>
+    <line x1="10" y1="40" x2="90" y2="40" stroke="black" stroke-width="10" stroke-linecap="round"></line>
+    <line x1="10" y1="65" x2="90" y2="65" stroke="black" stroke-width="10" stroke-linecap="round"></line>
+</svg>
+
+        </div>
+        <a href="https://dev-rayhan-byte.github.io/asaduzzaman/index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">ASAD </span>BIN MOSHARAF</h1>
+        </a>
+    </div>
+
+    <!-- Menu Overlay -->
+    <div id="bupc-nav">
+        <div class="bupc-overlay-content">
+            <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/about" class="nav-item nav-link">About</a>
+                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/education-experience" class="nav-item nav-link">Education & Experience</a>
+                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/research-interest" class="nav-item nav-link">Research Interest</a>
+                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/publications" class="nav-item nav-link">Publications</a>
+                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/awards-and-honors" class="nav-item nav-link">Awards and Honors</a>
+                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/participation" class="nav-item nav-link">Participation</a>
+                <a href="" class="nav-item nav-link">Presentations</a>
+                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/membership" class="nav-item nav-link">Membership</a>
+                <a href="" class="nav-item nav-link">Computer Skills</a>
+                <a href="" class="nav-item nav-link">Countries Visited</a>
+                <a href="" class="nav-item nav-link">Latest</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var topBar = document.getElementById("bupc-top-bar");
+            var menuButton = document.getElementById("bupc-menu-button");
+            var overlay = document.getElementById("bupc-nav");
+
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 1000) {
+                    topBar.style.top = "0";
+                } else {
+                    topBar.style.top = "-70px";
+                }
+            });
+
+            menuButton.addEventListener("click", function () {
+                if (overlay.style.height === "100%") {
+                    overlay.style.height = "0%";
+                    menuButton.classList.remove("open");
+                } else {
+                    overlay.style.height = "100%";
+                    menuButton.classList.add("open");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+    <div class="container-fluid d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh; background: url('https://dev-rayhan-byte.github.io/asaduzzaman/hbg2.jpg') no-repeat center center/cover;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 text-center px-5 pl-lg-0 pb-5 pb-lg-0">
+                <img class="img-fluid w-75 rounded-circle shadow-sm " src="https://dev-rayhan-byte.github.io/asaduzzaman/464581229_3315598751905686_5354446827576174339_n.jpg" alt="Asad Bin Mosharaf" style=" border: 3px solid;">
+                <div class="mt-4">
+                    <img src="https://dev-rayhan-byte.github.io/asaduzzaman/BULOGO.png" alt="University Logo" class="img-fluid mr-3" style="height: 80px;">
+                   
+                </div>
+            </div>
+            <div class="col-lg-7 text-center text-lg-left">
+                <h3 class="text-white font-weight-light mb-3">Welcome to</h3>
+                <h1 class="text-uppercase font-weight-bold" style="color: aliceblue; font-size: 3rem;">md. Asad Bin Mosharaf</h1>
+                <hr class="bg-light">
+                <p class="text-light font-italic mb-4" style="font-size: 1.2rem;">
+                    ◪ Faculty Member, Department of Physics, University of Barishal <br>
+                     ◪   Student Advisor, Department of Physics, University of Barishal <br>
+                    ◪ Member, Sakura Science Club, Japan
+                </p>
+                <hr class="bg-light">
+                <p class="text-light mb-4" style="font-size: 1rem;">
+                    <strong>Research Interests:</strong> Biophysics, Biomedical Physics, & Sensor Tech Expert<br>
+                    
+                    <strong>Contact:</strong> phy.asad.bu@gmail.com | 01704938370
+                </p>
+                <hr class="bg-light">
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-4">
+                    <a href="https://bu.ac.bd/view-profile.php?editId=378" class="btn btn-outline-light mr-4 px-4 py-2">Visit Profile</a>
+                    <a href="#contact" class="btn btn-light text-dark px-4 py-2">Contact Me</a>
+                </div>
+                <div class="pt-4">
+                    <a href="https://scholar.google.com" class="text-white mr-3" target="_blank">
+                        <i class="fab fa-google-scholar fa-2x"></i>
+                    </a>
+                    <a href="https://linkedin.com" class="text-white mr-3" target="_blank">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="mailto:phy.asad.bu@gmail.com" class="text-white">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <!-- Academic About Section Start -->
+<div class="container-fluid py-5" id="about">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+            <h1 class="position-absolute text-uppercase text-primary">About</h1>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-5 pb-4 pb-lg-0">
+                <img class="img-fluid rounded w-100" src="https://dev-rayhan-byte.github.io/asaduzzaman/about.jpg" alt="Md. Asaduzzaman">
+            </div>
+            <div class="col-lg-7">
+                <h3 class="mb-4">Lecturer & Student Advisor, Department of Physics</h3>
+                <p>Md. Asaduzzaman is dedicated to pioneering research in Biophysics and Biomedical Sensor Technologies, with a strong commitment to advancing health, sustainability, and innovation. He has received prestigious awards and fellowships in recognition of his academic excellence and contributions.</p>
+                <div class="row mb-3">
+                    <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Md. Asaduzzaman</span></h6></div>
+                    <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">January 26</span></h6></div>
+                    <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">MS in Physics</span></h6></div>
+                    <div class="col-sm-6 py-2"><h6>Research Focus: <span class="text-secondary">Biophysics, Sensor Tech</span></h6></div>
+                    <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">phy.asad.bu@gmail.com</span></h6></div>
+                    <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">01704938370</span></h6></div>
+                    <div class="col-sm-6 py-2"><h6>Affiliation: <span class="text-secondary">University of Barishal</span></h6></div>
+                    <div class="col-sm-6 py-2"><h6>YouTube: <span class="text-secondary">Unique StudyTube</span></h6></div>
+                </div>
+                <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/about" class="btn btn-outline-primary mr-4" style="border: 5x solid;">More About</a>
+                <a href="https://bu.ac.bd/view-profile.php?editId=378" class="btn btn-outline-primary">Visit Profile</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Academic About Section End -->
+
+
+
+    <!-- Qualification Start -->
+<div class="container-fluid py-5" id="qualification">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+            <h1 class="position-absolute text-uppercase text-primary">Education & Experience</h1>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h3 class="mb-4">Education</h3>
+                <div class="border-left border-primary pt-2 pl-4 ml-2">
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">MS in Physics</h5>
+                        <p class="mb-2"><strong>University of Barishal</strong> | <small>2020 - 2022</small></p>
+                        <p>Achieved 1st Class (1st) in MS in Physics with a focus on advanced theoretical and experimental physics.</p>
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">BS in Physics</h5>
+                        <p class="mb-2"><strong>University of Barishal</strong> | <small>2015 - 2020</small></p>
+                        <p>Graduated with a Bachelor of Science degree in Physics, specializing in modern physics and computational techniques.</p>
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Intermediate of Science</h5>
+                        <p class="mb-2"><strong>Govt. B.L University College, Khulna</strong> | <small>2011 - 2013</small></p>
+                        <p>Completed Higher Secondary Certificate (HSC) in the Science Group with a strong academic record.</p>
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Secondary School Certificate</h5>
+                        <p class="mb-2"><strong>Nakipur H.C Pilot Model High School</strong> | <small>2006 - 2011</small></p>
+                        <p>Received Talentpool Scholarships in classes 5 and 8, excelling in the Science Group.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h3 class="mb-4">Experience</h3>
+                <div class="border-left border-primary pt-2 pl-4 ml-2">
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Student Advisor</h5>
+                        <p class="mb-2"><strong>University of Barishal</strong> | <small>2024 - Present</small></p>
+                        <p>Serving as the Student Advisor in the Department of Physics, guiding students in their academic journey.</p>
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Lecturer in Physics</h5>
+                        <p class="mb-2"><strong>University of Barishal</strong> | <small>2023 - Present</small></p>
+                        <p>Appointed as a permanent lecturer, contributing to academic research and teaching undergraduate physics courses.</p>
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">YouTuber</h5>
+                        <p class="mb-2"><strong>Unique StudyTube</strong> | <small>2020 - Present</small></p>
+                        <p>Creating educational content to simplify physics concepts for students through engaging videos.</p>
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                        <h5 class="font-weight-bold mb-1">Lecturer in Physics</h5>
+                        <p class="mb-2"><strong>Advanced College, Barishal</strong> | <small>2020 - 2022</small></p>
+                        <p>Taught physics to college students and mentored them in academic excellence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Qualification End -->
+<a href="https://sites.google.com/bu.ac.bd/asaduzzaman/education-experience" class="see-more-btn">See More</a>
+
+
+
+
+   
+    <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Interest</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Research Interest</h1>
+            </div>
+
+<div class="section">
+  <h2>Research Interest</h2>
+  <p>Biophysics, Biomedical Physics, & Sensor Tech Expert</p>
+  <ul>
+    <li><strong>Biophysical Modeling:</strong> Probing molecular and cellular processes via multi-scale modeling.</li>
+    <li><strong>Biomedical Applications:</strong> Advancing drug delivery, pharmacokinetics, and precision therapies with modeling.</li>
+    <li><strong>Medical Imaging & Diagnostics:</strong> Collaborating for better healthcare imaging and early disease detection.</li>
+    <li><strong>Biomechanics:</strong> Studying tissue mechanics to inform prosthetics and orthopedics.</li>
+    <li><strong>Bioinformatics & Computational Biology:</strong> Discovering therapeutic targets and biomarkers through data analysis.</li>
+    <li><strong>Sensor Technologies:</strong> Precision sensors for healthcare, environmental monitoring, and industry.</li>
+  </ul>
+  <p>My work merges these fields, deepening biological understanding, advancing medicine, and pioneering sensors. Committed to health, sustainability, and innovation.</p>
+  <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/research-interest" class="see-more-btn">See More</a>
+
+</div>
+
+<div class="section">
+    
+     <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Publications</h1>
+                <h1 class="position-absolute text-uppercase text-primary"> Publications </h1>
+            </div>
+    
+  
+  <h3>Research:</h3>
+  <p>MS Thesis: "Study of molecular transport through nano-sized multipores in the membrane of a giant unilamellar vesicle using COMSOL simulation".</p>
+  <h3>Publications:</h3>
+  <p>📄 Md. Asaduzzaman, Apu Kumar Ghosh and Md. Khorshed Alam, "Adsorption of CO on Pt3, Pd3, Pd Doped Pt2 and Pt Doped Pd3 Clusters: A Density Functional Study," DAFFODIL INTERNATIONAL UNIVERSITY JOURNAL OF SCIENCE AND TECHNOLOGY, Volume 18, Issue 2, July 2023. ISSN 1818-5878 (Print), 2408-8498 (Online).</p>
+ <p> 📄  Theoretical Study of Irreversible Electroporation of Tissue for Effective Intracellular Delivery of Biomacromolecules" This study delves into the mechanisms of irreversible electroporation (IRE) as a potential approach for intracellular delivery and cancer therapy. It provides insights into the transport kinetics of molecular probes and the role of pore creation in lipid membranes.
+📄 <br>📄 Exploring Molecular Transport in Single Nanopores: Impact of Probe Size Variation in Various-Sized Giant Unilamellar Vesicles (GUVs) Using COMSOL Simulation" This work focuses on the dynamics of molecular transport through nanopores in GUVs, contributing to our understanding of antimicrobial peptides and their mechanisms, with implications for drug design in cancer therapy. </p>
+    
+    <h3>Under Submission:</h3>
+  <p>"Investigation of molecular transport into the GUV through a single nanopore by varying the sizes of nanopores in the GUV membranes" – European Journal of Biophysics.</p>
+  <p>"Study of molecular transport through nano-sized multipores in the membrane of a giant unilamellar vesicle using COMSOL simulation" – Biophysical Journal.</p>
+  <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/publications" class="see-more-btn">See More</a>
+
+</div>
+
+<div class="section">
+    <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Awards</h1>
+                <h1 class="position-absolute text-uppercase text-primary"> Awards and Honors </h1>
+            </div>
+  <h2>Awards and Honors</h2>
+  <ul>
+    <li>Dean's Award (2023), Organized by the University of Barishal.</li>
+    <li>National Science and Technology (NST) Fellowship (2021-2022), Funded by the Ministry of Science and Technology for MS Thesis.</li>
+    <li>Talent Pool Scholarships, Achieved in PSC and JSC.</li>
+  </ul>
+ <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/awards-and-honors" class="see-more-btn">See More</a>
+
+</div>
+
+<div class="section">
+    <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Participation</h1>
+                <h1 class="position-absolute text-uppercase text-primary"> Participation </h1>
+            </div>
+  <h2>Participation</h2>
+  <ul>
+    <li>Poster Presentation: The 5th Innovation Forum of Advanced Engineering and Education, Organized by Kogakuin University, Tokyo, Japan.</li>
+    <li>Poster Presentation (Online): National Conference on Physics 2021, Organized by Bangladesh Physical Society (BPS).</li>
+    <li>Oral Presentation: Seminar and Workshop on Physics Education & Research, Venue: University of Barishal, Bangladesh.</li>
+  </ul>
+ <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/participation" class="see-more-btn">See More</a>
+
+</div>
+
+<div class="section">
+    <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Presentations</h1>
+                <h1 class="position-absolute text-uppercase text-primary"> Presentations </h1>
+            </div>
+  <h2>Presentations</h2>
+  <ul>
+    <li>International Conference (Poster): Md. F. Hossain, Md. Asaduzzaman, F. Fujita, and Md. Khorshed Alam, "Excited-states Calculations for C60/Pentacene Interface," The 5th Innovative Forum of Advanced Engineering and Education (IFAEE-5), November 1, 2018, Tokyo, Japan.</li>
+    <li>International Conference (Poster): Md. I. Hossain, Md. Asaduzzaman, Md. F. Hossain, and Md. Khorshed Alam, "Operation, Characterization & Physical Modeling of Flattened Filter Free (FFF) and Flattened Filter (FF) Medical Linear Accelerator Beams," IFAEE-5, November 1, 2018, Tokyo, Japan.</li>
+    <li>International Conference (Oral): Shovon Saha, Md. Atikur Rahman, Md. Asaduzzaman, Md. Saif Ishtiaque, Md. Imran Hossain, Dr. Md. A. S. Karal, and Dr. Md. Khorshed Alam, "Simulation of Molecular Transport Through Multipores into the Membrane of a Giant Unilamellar Vesicle Using COMSOL Multiphysics," International Conference on Environmental Protection for Sustainable Development (ICEPSD-2022), September 2-4, 2022, Dhaka, Bangladesh.</li>
+    <li>Academic Conference (Poster): Md. Asaduzzaman, T. Rahman, M.S. Ishtiaque, M.I. Hossain, Md. A. S. Karal, and Md. K. Alam, "Investigation of Molecular Transport Through Multipores into Giant Unilamellar Vesicles Using COMSOL Simulation," National Conference on Physics -2021, August 6-7, 2021, Dhaka, Bangladesh.</li>
+    <li>Academic Conference (Oral): Md. Asaduzzaman, M.S. Ishtiaque, M.I. Hossain, Md. A. S. Karal, and Md. K. Alam, "Simulation-Based Study on Molecular Transport Through Multiple Pores into Giant Unilamellar Vesicles Using COMSOL Multiphysics," Seminar and Workshop on Physics Education & Research-2022, July 28, 2022, University of Barishal, Bangladesh.</li>
+  </ul>
+  <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/participation" class="see-more-btn">See More</a>
+
+</div>
+
+<div class="section">
+    <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Member</h1>
+                <h1 class="position-absolute text-uppercase text-primary"> Membership </h1>
+            </div>
+  <h2>Membership</h2>
+  <ul>
+    <li>Member of the Sakura Science Club (SSC), Japan (Since November 4, 2018).</li>
+      <li>Advisor | Barishal University Physics Club (BUPC)</li>
+  </ul>
+  <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/membership" class="see-more-btn">See More</a>
+
+</div>
+
+<div class="section">
+    <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Computer Skills </h1>
+            </div>
+  <h2></h2>
+  <ul>
+    <li>MS Office Suite (Word, Excel, PowerPoint).</li>
+    <li>Programming Languages: C, C++, Python, JavaScript.</li>
+    <li>Specialized Software: COMSOL Multiphysics, IOVIA Materials Studio, OriginPro, IBM SPSS, ArcGIS.</li>
+    <li>Operating Systems: Windows OS.</li>
+    <li>Communication Tools: Zoom Meeting, Google Meet.</li>
+  </ul>
+ <a href="https://sites.google.com/bu.ac.bd/asaduzzaman/education-experience" class="see-more-btn">See More</a>
+
+</div>
+
+<div class="section">
+    <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Visited</h1>
+                <h1 class="position-absolute text-uppercase text-primary"> Countries Visited </h1>
+            </div>
+  <h2>Countries Visited</h2>
+  <ul>
+    <li>Japan</li>
+    <li>Thailand</li>
+    <li>Sri Lanka</li>
+  </ul>
+<a href="https://sites.google.com/bu.ac.bd/asaduzzaman/membership" class="see-more-btn">See More</a>
+
+</div>
+
+
+        </div> </div>
+    <!-- Services End -->
+
+
+    <!-- Portfolio Start -->
+   
+    <!-- Portfolio End -->
+
+
+    <!-- Testimonial Start 
+    <div class="container-fluid py-5" id="testimonial">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Review</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Clients Say</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                            <h5 class="font-weight-bold m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                            <h5 class="font-weight-bold m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
+                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                            <h5 class="font-weight-bold m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid pt-5" id="blog">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Latest</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="https://dev-rayhan-byte.github.io/asaduzzaman/bcs.jpg" alt="">
+                        
+                    </div>
+                    <h5 class="font-weight-medium mb-4">আলহামদুলিল্লাহ!<br>
+৪৩তম বিসিএস ক্যাডার (শিক্ষা) এ সুপারিশপ্রাপ্ত। পূর্ব সিদ্ধান্ত অনুযায়ী বর্তমান পদ, বরিশাল বিশ্ববিদ্যালয়ের পদার্থবিজ্ঞানের প্রভাষক ও অতিরিক্ত দায়িত্ব ছাত্র উপদেষ্টা হিসেবে কর্মজীবন চালিয়ে যেতে চাই। সকলের কাছে দোয়া প্রার্থী।</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="https://www.facebook.com/share/p/18WF7xvTh7/" style="border: 2px solid ;"><b>Read More</b></a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="https://dev-rayhan-byte.github.io/asaduzzaman/2paper.jpg" alt="">
+                        
+                    </div>
+                    <h5 class="font-weight-medium mb-4">আলহামদুলিল্লাহ!<br>
+Excited to share that two of our research works have been published!
+📄 1. "Theoretical Study of Irreversible Electroporation of Tissue for Effective Intracellular Delivery of Biomacromolecules"
+This study delves into the mechanisms of irreversible electroporation (IRE) as a potential approach for intracellular delivery and cancer therapy. It provides insights into the transport kinetics of molecular probes and the role of pore creation in lipid membranes.
+<br>📄 2. "Exploring Molecular Transport in Single Nanopores: Impact of Probe Size Variation in Various-Sized Giant Unilamellar Vesicles (GUVs) Using COMSOL Simulation"
+This work focuses on the dynamics of molecular transport through nanopores in GUVs, contributing to our understanding of antimicrobial peptides and their mechanisms, with implications for drug design in cancer therapy.
+W</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="https://www.facebook.com/share/p/1KRw64SFZK/" style="border: 2px solid ;"><b>Read More</b></a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded w-100" src="https://dev-rayhan-byte.github.io/asaduzzaman/pp.jpg" alt="">
+                        
+                    </div>
+                    <h5 class="font-weight-medium mb-4">আলহামদুলিল্লাহ!<br>
+One of our research papers is now published, named "STUDY OF MOLECULAR TRANSPORT THROUGH NANO-SIZED ASYMMETRIC MULTIPORE IN GIANT UNILAMELLAR VESICLE MEMBRANE BY COMSOL SIMULATION."
+We have done some COMSOL simulations of molecular transport through nanopores that could find highly important applications in drug delivery systems, gene transfection and so on.</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" href="https://www.facebook.com/share/p/15j81ECTtt/" style="border: 2px solid ;"><b>Read More</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <button class="see-more-btn">See More</button>
+    <!-- Blog End -->
+
+
+    <!-- Contact Start
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                        required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                        required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
+                                    Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid text-white mt-5 py-5 px-sm-3 px-md-5" style="background: url('https://dev-rayhan-byte.github.io/asaduzzaman/hbg2.jpg') no-repeat center center/cover;">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="mailto:phy.asad.bu@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/AsadBinMosharaf"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="01704938370"><i class="fas fa-phone"></i></a>
+            </div>
+            <div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Privacy</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Terms</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">FAQs</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Help</a>
+            </div>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Asad Bin Mosharaf</a>. All Rights Reserved. <a class="text-white font-weight-bold" href=""></a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+        
+</body>
+
+</html>
